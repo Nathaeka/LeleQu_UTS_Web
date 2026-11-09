@@ -149,4 +149,52 @@ export const DashboardOverview = () => {
           </Link>
         </div>
 
-      
+        <div className="overflow-x-auto">
+          <table className="w-full text-left text-xs">
+            <thead className="bg-[#F8FAF6] text-[#6B786F] font-semibold border-b border-neutral-100">
+              <tr>
+                <th className="py-3.5 px-6">Foto & Nama Produk</th>
+                <th className="py-3.5 px-6">Ukuran / Kategori</th>
+                <th className="py-3.5 px-6">Harga per Kg</th>
+                <th className="py-3.5 px-6">Min. Order</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-neutral-100">
+              {products.map((p) => (
+                <tr key={p.id} className="hover:bg-neutral-50/50">
+                  <td className="py-3.5 px-6 flex items-center gap-3">
+                    <img
+                      src={p.image_url}
+                      alt={p.name}
+                      className="w-10 h-10 rounded-xl object-cover border border-neutral-200 shrink-0"
+                      onError={(e) => {
+                        e.target.src = '/public/assets/foto/Ikan_lele_segar_5b6a360e.jpg';
+                      }}
+                    />
+                    <div>
+                      <span className="font-bold text-[#202923] block">{p.name}</span>
+                      <span className="text-[11px] text-neutral-400 line-clamp-1 max-w-xs">
+                        {p.description}
+                      </span>
+                    </div>
+                  </td>
+                  <td className="py-3.5 px-6">
+                    <span className="bg-[#E8F3E9] text-[#123F2E] font-semibold px-2 py-0.5 rounded text-[11px]">
+                      {p.grade}
+                    </span>
+                  </td>
+                  <td className="py-3.5 px-6 font-mono font-bold text-[#123F2E]">
+                    {formatRupiah(p.price_per_kg)}
+                  </td>
+                  <td className="py-3.5 px-6 text-neutral-600 font-medium">
+                    {p.min_order || '3 kg'}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+};
