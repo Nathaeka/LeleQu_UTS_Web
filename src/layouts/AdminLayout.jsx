@@ -169,7 +169,6 @@ export const AdminLayout = () => {
                         : 'text-[#6B786F] hover:bg-neutral-50 hover:text-[#202923]'
                     }`}
                   >
-              }
                     <div className="flex items-center gap-3">
                       <Icon className="w-4 h-4" />
                       <span>{item.name}</span>
