@@ -6,7 +6,7 @@ export const initialProducts = [
     description:
       "Ikan lele segar pilihan dengan rasio 8–10 ekor per kilogram. Dipanen langsung dari kolam pengelolaan bersih dan sehat. Daging tebal, gurih, padat, dan bebas bau lumpur karena telah melalui proses pembersihan dan karantina air mengalir sebelum ditimbang.",
     grade: "Konsumsi (8–10 ekor/kg)",
-    price_per_kg: 24000,
+    price_per_kg: 23000,
     image_url: "/public/assets/foto/Ikan_lele_segar_5b6a360e.jpg",
     is_available: true,
     min_order: "3 kg",
