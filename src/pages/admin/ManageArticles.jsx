@@ -14,27 +14,30 @@ export const ManageArticles = () => {
   const { articles, addArticle, updateArticle, deleteArticle } = useApp();
   const [search, setSearch] = useState('');
   const [categoryFilter, setCategoryFilter] = useState('all');
+
+  // Modal state
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [editingArticle, setEditingArticle] = useState(null);
   const [deleteTarget, setDeleteTarget] = useState(null);
+
+  // Form fields
   const [formData, setFormData] = useState({
     title: '',
     slug: '',
     category: 'Teknik Budidaya',
     thumbnail: '/public/assets/foto/kolam_lele_8e878a5c.jpeg',
     author: 'Tim LeleQu',
-    read_time: '5 menit baca',
     content: '',
     status: 'published',
     published_at: '02 November 2026',
   });
 
   const availableImagePresets = [
-  { label: 'Infografis Pakan Lele', url: '/assets/foto/image_60f36d86.png' },
-  { label: 'Kolam LeleQu Terpal', url: '/assets/foto/kolam_lele_8e878a5c.jpeg' },
-  { label: 'Kolam Bundar Air', url: '/assets/foto/kolam_lele_tok_18245844.jpeg' },
-  { label: 'Ikan Lele Segar', url: '/assets/foto/Ikan_lele_segar_5b6a360e.jpg' },
-  { label: 'Lele Frozen Bersih', url: '/assets/foto/lele_frozen_577f6962.jpg' },
+  { label: 'sampul lele', url: '/assets/foto/Article1.png' },
+  { label: 'Teknik Budidaya', url: '/assets/foto/Article2.jpeg' },
+  { label: 'manajemen air', url: '/assets/foto/Article3.jpeg' },
+  { label: 'Pemberian pakan terjadwal', url: '/assets/foto/Article4.jpg' },
+  { label: 'SOS panen lele', url: '/assets/foto/Article5.jpg' },
 ];
 
   const filteredArticles = useMemo(() => {
@@ -57,7 +60,6 @@ export const ManageArticles = () => {
       category: 'Teknik Budidaya',
       thumbnail: '/public/assets/foto/kolam_lele_8e878a5c.jpeg',
       author: 'Tim LeleQu',
-      read_time: '5 menit baca',
       content: '',
       status: 'published',
       published_at: new Date().toLocaleDateString('id-ID', {
@@ -77,7 +79,6 @@ export const ManageArticles = () => {
       category: art.category,
       thumbnail: art.thumbnail,
       author: art.author,
-      read_time: art.read_time,
       content: art.content,
       status: art.status,
       published_at: art.published_at,
@@ -96,7 +97,6 @@ export const ManageArticles = () => {
         category: formData.category,
         thumbnail: formData.thumbnail,
         author: formData.author,
-        read_time: formData.read_time,
         content: formData.content,
         status: formData.status,
       });
@@ -107,7 +107,6 @@ export const ManageArticles = () => {
         category: formData.category,
         thumbnail: formData.thumbnail,
         author: formData.author,
-        read_time: formData.read_time,
         content: formData.content,
         status: formData.status,
         published_at: formData.published_at,
