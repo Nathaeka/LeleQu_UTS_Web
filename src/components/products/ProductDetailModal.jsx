@@ -1,16 +1,39 @@
+<<<<<<< HEAD
 import React from 'react';
 import { useApp } from '../../context/AppContext.jsx';
 import { X, Check, ShoppingBag, MapPin, AlertCircle, ShieldCheck } from 'lucide-react';
 
 export const ProductDetailModal = () => {
   const { selectedProduct, setSelectedProduct, openOrderModal, settings } = useApp();
+=======
+import React from "react";
+import { useApp } from "../../context/AppContext.jsx";
+import {
+  X,
+  Check,
+  ShoppingBag,
+  MapPin,
+  AlertCircle,
+  ShieldCheck,
+} from "lucide-react";
+
+export const ProductDetailModal = () => {
+  const { selectedProduct, setSelectedProduct, openOrderModal, settings } =
+    useApp();
+>>>>>>> origin/develop
 
   if (!selectedProduct) return null;
 
   const formatRupiah = (val) => {
+<<<<<<< HEAD
     return new Intl.NumberFormat('id-ID', {
       style: 'currency',
       currency: 'IDR',
+=======
+    return new Intl.NumberFormat("id-ID", {
+      style: "currency",
+      currency: "IDR",
+>>>>>>> origin/develop
       maximumFractionDigits: 0,
     }).format(val);
   };
@@ -40,7 +63,12 @@ export const ProductDetailModal = () => {
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover object-center absolute inset-0"
               onError={(e) => {
+<<<<<<< HEAD
                 e.target.src = '/public/assets/foto/Ikan_lele_segar_5b6a360e.jpg';
+=======
+                e.target.src =
+                  "/public/assets/foto/Ikan_lele_segar_5b6a360e.jpg";
+>>>>>>> origin/develop
               }}
             />
             {/* Gradient overlay for readability */}
@@ -95,7 +123,13 @@ export const ProductDetailModal = () => {
                 <span className="text-lg sm:text-xl font-bold text-[#123F2E] font-mono tabular-nums">
                   {formatRupiah(selectedProduct.price_per_kg)}
                 </span>
+<<<<<<< HEAD
                 <span className="text-xs font-normal text-[#6B786F]">/ kilogram</span>
+=======
+                <span className="text-xs font-normal text-[#6B786F]">
+                  / kilogram
+                </span>
+>>>>>>> origin/develop
               </div>
             </div>
 
@@ -106,7 +140,12 @@ export const ProductDetailModal = () => {
                 <span>Pengambilan Langsung di Lokasi Usaha (Pickup Only)</span>
               </div>
               <p className="text-[11px] text-neutral-700 leading-normal pl-5">
+<<<<<<< HEAD
                 "Pesanan LeleQu hanya diambil di kolam. Belum melayani kurir pengiriman."
+=======
+                "Pesanan LeleQu hanya diambil di kolam. Belum melayani kurir
+                pengiriman."
+>>>>>>> origin/develop
               </p>
               <div className="flex items-center gap-1 text-[11px] text-[#1B6044] font-medium pl-5 pt-0.5 truncate">
                 <MapPin className="w-3 h-3 shrink-0" />
@@ -120,6 +159,7 @@ export const ProductDetailModal = () => {
             </p>
 
             {/* Quality Checklist (Compact 2-col) */}
+<<<<<<< HEAD
             {selectedProduct.characteristics && selectedProduct.characteristics.length > 0 && (
               <div className="bg-[#F8FAF6] p-2.5 rounded-xl border border-neutral-100">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
@@ -132,6 +172,26 @@ export const ProductDetailModal = () => {
                 </div>
               </div>
             )}
+=======
+            {selectedProduct.characteristics &&
+              selectedProduct.characteristics.length > 0 && (
+                <div className="bg-[#F8FAF6] p-2.5 rounded-xl border border-neutral-100">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+                    {selectedProduct.characteristics
+                      .slice(0, 4)
+                      .map((char, idx) => (
+                        <div
+                          key={idx}
+                          className="flex items-center gap-1.5 text-[11px] text-[#202923]"
+                        >
+                          <Check className="w-3 h-3 text-[#1B6044] shrink-0" />
+                          <span className="truncate">{char}</span>
+                        </div>
+                      ))}
+                  </div>
+                </div>
+              )}
+>>>>>>> origin/develop
 
             {/* Action Buttons: Full & Clear */}
             <div className="pt-1 space-y-2">

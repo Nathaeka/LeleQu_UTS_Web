@@ -5,7 +5,11 @@
     "slug": "ikan-lele-konsumsi-8-10",
     "description": "Ikan lele segar pilihan dengan rasio 8–10 ekor per kilogram. Dipanen langsung dari kolam pengelolaan bersih dan sehat. Daging tebal, gurih, padat, dan bebas bau lumpur karena telah melalui proses pembersihan dan karantina air mengalir sebelum ditimbang.",
     "grade": "Konsumsi (8–10 ekor/kg)",
+<<<<<<< HEAD
     "price_per_kg": 25000,
+=======
+    "price_per_kg": 24000,
+>>>>>>> origin/develop
     "image_url": "/public/assets/foto/Ikan_lele_segar_5b6a360e.jpg",
     "min_order": "3 kg",
     "characteristics": [
@@ -22,7 +26,11 @@
     "slug": "ikan-lele-super-besar-6-8",
     "description": "Ikan lele ukuran jumbo dengan bobot 6–8 ekor per kilogram. Rendemen daging sangat tebal, cocok untuk olahan lele bakar madu, lele asap, mangut lele, atau di-fillet tanpa duri untuk masakan keluarga.",
     "grade": "Super / Besar (6–8 ekor/kg)",
+<<<<<<< HEAD
     "price_per_kg": 24000,
+=======
+    "price_per_kg": 30000,
+>>>>>>> origin/develop
     "image_url": "/public/assets/foto/Ikan_lele_segar_5b6a360e.jpg",
     "min_order": "3 kg",
     "characteristics": [
@@ -39,7 +47,11 @@
     "slug": "ikan-lele-frozen-vacuum",
     "description": "Ikan lele segar yang telah disiangi bersih (dibuang isi perut dan insang), dicuci higienis, lalu dibekukan cepat (air blast frozen) dan dikemas rapat kedap udara (vacuum pack). Siap langsung dibumbui atau digoreng kapan saja tanpa repot membersihkan ikan.",
     "grade": "Frozen Siap Masak (Pack 1 kg)",
+<<<<<<< HEAD
     "price_per_kg": 28000,
+=======
+    "price_per_kg": 30000,
+>>>>>>> origin/develop
     "image_url": "/public/assets/foto/lele_frozen_577f6962.jpg",
     "min_order": "2 kg (2 pack)",
     "characteristics": [
@@ -56,7 +68,11 @@
     "slug": "fillet-ikan-lele-boneless",
     "description": "Potongan daging murni ikan lele tanpa tulang/duri dan kulit. Diproses dari lele ukuran super segar berbobot tinggi. Sangat higienis, bergizi tinggi untuk anak-anak, nugget ikan, fish & chips, atau masakan diet sehat.",
     "grade": "Fillet Daging Murni (Pack 500 gr)",
+<<<<<<< HEAD
     "price_per_kg": 45000,
+=======
+    "price_per_kg": 70000,
+>>>>>>> origin/develop
     "image_url": "/public/assets/foto/lele_fillet_ab2007db.jpg",
     "min_order": "1 kg",
     "characteristics": [

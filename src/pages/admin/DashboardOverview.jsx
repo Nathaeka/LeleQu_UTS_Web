@@ -10,7 +10,10 @@ import {
   CheckCircle2,
   Package,
 } from 'lucide-react';
+<<<<<<< HEAD
 import RouletteNumber from '../../components/common/RouletteNumber';
+=======
+>>>>>>> origin/develop
 
 export const DashboardOverview = () => {
   const { products, articles } = useApp();
@@ -71,7 +74,11 @@ export const DashboardOverview = () => {
         </div>
       </div>
 
+<<<<<<< HEAD
       {/* Primary Metric Cards dengan Animasi Roulette */}
+=======
+      {/* Primary Metric Cards */}
+>>>>>>> origin/develop
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {/* Total Produk */}
         <div className="p-5 rounded-2xl bg-white border border-neutral-200 shadow-xs space-y-2">
@@ -82,7 +89,11 @@ export const DashboardOverview = () => {
             </div>
           </div>
           <div className="text-2xl font-extrabold text-[#123F2E] font-mono tabular-nums">
+<<<<<<< HEAD
             <RouletteNumber value={totalProducts} duration={1500} />
+=======
+            {totalProducts}
+>>>>>>> origin/develop
           </div>
           <span className="text-[11px] text-[#6B786F] block">Katalog komoditas & olahan</span>
         </div>
@@ -96,7 +107,11 @@ export const DashboardOverview = () => {
             </div>
           </div>
           <div className="text-2xl font-extrabold text-emerald-700 font-mono tabular-nums">
+<<<<<<< HEAD
             <RouletteNumber value={freshProducts} duration={1800} />
+=======
+            {freshProducts}
+>>>>>>> origin/develop
           </div>
           <span className="text-[11px] text-[#6B786F] block">Konsumsi & super jumbo</span>
         </div>
@@ -110,7 +125,11 @@ export const DashboardOverview = () => {
             </div>
           </div>
           <div className="text-2xl font-extrabold text-teal-700 font-mono tabular-nums">
+<<<<<<< HEAD
             <RouletteNumber value={processedProducts} duration={2000} />
+=======
+            {processedProducts}
+>>>>>>> origin/develop
           </div>
           <span className="text-[11px] text-[#6B786F] block">Vacuum & fillet boneless</span>
         </div>
@@ -124,7 +143,11 @@ export const DashboardOverview = () => {
             </div>
           </div>
           <div className="text-2xl font-extrabold text-[#123F2E] font-mono tabular-nums">
+<<<<<<< HEAD
             <RouletteNumber value={totalArticles} duration={1600} />
+=======
+            {totalArticles}
+>>>>>>> origin/develop
           </div>
           <span className="text-[11px] text-[#6B786F] block">Konten edukasi budidaya</span>
         </div>
@@ -198,4 +221,8 @@ export const DashboardOverview = () => {
       </div>
     </div>
   );
+<<<<<<< HEAD
 };
+=======
+};
+>>>>>>> origin/develop

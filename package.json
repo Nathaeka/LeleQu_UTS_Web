@@ -25,7 +25,11 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+<<<<<<< HEAD
     "esbuild": "^0.28.2",
+=======
+    "esbuild": "^0.25.0",
+>>>>>>> origin/develop
     "tailwindcss": "^4.3.3"
   }
 }
